@@ -3,10 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Vidéo</title>
+    <title>MHD PROD | Portfolio Vidéo & Création Visuelle</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #0f0f11;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #1e1e24, #0f0f11);
+            text-align: center;
+            padding: 60px 20px;
+            border-bottom: 2px solid #e50914;
+        }
+        header h1 {
+            font-size: 2.8rem;
+            letter-spacing: 2px;
+            color: #ffffff;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #b3b3b3;
+            margin-top: 10px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #e50914;
+            border-left: 4px solid #e50914;
+            padding-left: 10px;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .card {
+            background: #18181c;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #2a2a30;
+        }
+        .card h3 {
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        .btn-whatsapp {
+            display: inline-block;
+            background-color: #25D366;
+            color: #fff;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+        .btn-whatsapp:hover {
+            background-color: #1da851;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0a0a0c;
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-    <h1>Bienvenue sur mon Portfolio Vidéo</h1>
-    <p>Site en cours de création !</p>
+
+    <header>
+        <h1>MHD PROD</h1>
+        <p>Réalisation Vidéo • Montage • Couverture d'Événements</p>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">À propos</h2>
+        <p>Bienvenue sur le portfolio de <strong>MHD PROD</strong>. Spécialisé dans la captation et le montage vidéo, j'accompagne les artistes, entreprises et événements dans la création de contenus visuels percutants et professionnels.</p>
+        
+        <br><br>
+
+        <h2 class="section-title">Mes Services</h2>
+        <div class="services">
+            <div class="card">
+                <h3>🎬 Captation Vidéo</h3>
+                <p>Tournage d'événements, spectacles, festivals, galas et projets artistiques.</p>
+            </div>
+            <div class="card">
+                <h3>✂️ Montage & Post-production</h3>
+                <p>Édition dynamique, étalonnage, effets visuels et formats adaptés aux réseaux sociaux.</p>
+            </div>
+            <div class="card">
+                <h3>📱 Contenu Réseaux Sociaux</h3>
+                <p>Création de Reels, TikToks et teasers promotionnels impactants.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">Me Contacter</h2>
+        <p>Un projet vidéo en vue ? Discutons-en directement :</p>
+        <a href="https://wa.me/" class="btn-whatsapp" target="_blank">📲 Discuter sur WhatsApp</a>
+    </div>
+
+    <footer>
+        &copy; 2026 MHD PROD - Tous droits réservés.
+    </footer>
+
 </body>
 </html>
