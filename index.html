@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+   <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -60,26 +60,34 @@
             margin-bottom: 10px;
             color: #fff;
         }
-        .btn-whatsapp {
-            display: inline-block;
-            background-color: #25D366;
+        .social-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        .btn-contact {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 20px;
             color: #fff;
-            padding: 12px 25px;
             text-decoration: none;
             border-radius: 30px;
             font-weight: bold;
-            margin-top: 15px;
-            transition: 0.3s;
+            font-size: 0.95rem;
+            transition: transform 0.2s;
         }
-        .btn-whatsapp:hover {
-            background-color: #1da851;
-        }
+        .btn-whatsapp { background-color: #25D366; }
+        .btn-instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+        .btn-facebook { background-color: #1877F2; }
+        .btn-email { background-color: #EA4335; }
         footer {
             text-align: center;
             padding: 20px;
             background: #0a0a0c;
             color: #666;
             font-size: 0.9rem;
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -113,8 +121,14 @@
         </div>
 
         <h2 class="section-title">Me Contacter</h2>
-        <p>Un projet vidéo en vue ? Discutons-en directement :</p>
-        <a href="https://wa.me/" class="btn-whatsapp" target="_blank">📲 Discuter sur WhatsApp</a>
+        <p>Un projet vidéo en vue ? Retrouvez-moi sur mes réseaux :</p>
+        
+        <div class="social-buttons">
+            <a href="https://wa.me/2290193738226" class="btn-contact btn-whatsapp" target="_blank">📲 WhatsApp</a>
+            <a href="https://www.instagram.com/agassoussimechack?igsi=MWVtM2ZhZnZkd2E1aQ==" class="btn-contact btn-instagram" target="_blank">📸 Instagram</a>
+            <a href="https://www.facebook.com/share/1ErpY2dChi/" class="btn-contact btn-facebook" target="_blank">📘 Facebook</a>
+            <a href="mailto:mechackagassoussi1@gmail.com" class="btn-contact btn-email">✉️ Email</a>
+        </div>
     </div>
 
     <footer>
