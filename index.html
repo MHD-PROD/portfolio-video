@@ -1,4 +1,4 @@
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -44,6 +44,41 @@
             border-left: 4px solid #e50914;
             padding-left: 10px;
         }
+        .about-box {
+            background: #18181c;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #2a2a30;
+            margin-bottom: 40px;
+        }
+        .about-box p {
+            color: #cccccc;
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+        .about-box ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 20px 0;
+        }
+        .about-box li {
+            padding: 8px 0;
+            border-bottom: 1px solid #26262c;
+            color: #b3b3b3;
+        }
+        .about-box li strong {
+            color: #ffffff;
+        }
+        .creator-highlight {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 2px solid #e50914;
+        }
+        .creator-highlight h3 {
+            color: #ffffff;
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+        }
         .services {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -77,6 +112,9 @@
             font-size: 0.95rem;
             transition: transform 0.2s;
         }
+        .btn-contact:hover {
+            transform: translateY(-3px);
+        }
         .btn-whatsapp { background-color: #25D366; }
         .btn-instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
         .btn-facebook { background-color: #1877F2; }
@@ -99,11 +137,31 @@
     </header>
 
     <div class="container">
-        <h2 class="section-title">À propos</h2>
-        <p>Bienvenue sur le portfolio de <strong>MHD PROD</strong>. Spécialisé dans la captation et le montage vidéo, j'accompagne les artistes, entreprises et événements dans la création de contenus visuels percutants et professionnels.</p>
         
-        <br><br>
+        <!-- SECTION A PROPOS METROUVEES -->
+        <h2 class="section-title">À propos de MHD PROD</h2>
+        <div class="about-box">
+            <p>
+                <strong>MHD PROD</strong> est une structure indépendante de production audiovisuelle et de création de contenu basée à Parakou. Fondée par <strong>AGASSOUSSI Méchack Gnidjra</strong>, la marque s'illustre par son agilité, son sens du rythme et sa capacité à capturer l'essence de chaque projet.
+            </p>
+            <p>
+                Grâce à une approche tout-terrain et une grande adaptabilité, MHD PROD accompagne les artistes, les organisations et les porteurs d'initiatives dans la valorisation de leur image :
+            </p>
+            <ul>
+                <li>📌 <strong>Réalisation &amp; Montage Vidéo :</strong> Teasers, recaps d'événements, reportages et formats courts dynamiques pour les réseaux sociaux.</li>
+                <li>📌 <strong>Communication Visuelle :</strong> Conception de visuels (affiches, logos, identités numériques).</li>
+                <li>📌 <strong>Couverture Événementielle :</strong> Mises en lumière de festivals, galas, compétitions artistiques et projets communautaires.</li>
+            </ul>
 
+            <div class="creator-highlight">
+                <h3>Le Visage derrière la Marque</h3>
+                <p>
+                    Fondateur et monteur principal, <strong>AGASSOUSSI Méchack Gnidjra</strong> allie sensibilité artistique et maîtrise technique. Son approche repose sur une immersion rapide dans l'univers de chaque client pour offrir des contenus sur-mesure, modernes et impactants.
+                </p>
+            </div>
+        </div>
+
+        <!-- SECTION SERVICES -->
         <h2 class="section-title">Mes Services</h2>
         <div class="services">
             <div class="card">
@@ -120,6 +178,7 @@
             </div>
         </div>
 
+        <!-- SECTION CONTACT -->
         <h2 class="section-title">Me Contacter</h2>
         <p>Un projet vidéo en vue ? Retrouvez-moi sur mes réseaux :</p>
         
